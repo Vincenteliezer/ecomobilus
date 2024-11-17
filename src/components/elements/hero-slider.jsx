@@ -34,7 +34,7 @@ export default function HeroSlider() {
               </p>
 
               <div>
-                <button className="bg-white px-8 py-4 text-xl">
+                <button className="bg-[#4eba39] px-8 py-4 text-xl">
                   More about us
                 </button>
               </div>

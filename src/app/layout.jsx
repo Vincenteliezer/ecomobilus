@@ -3,6 +3,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Navbar from "@/components/elements/navbar";
 import { Poppins } from "next/font/google";
 import AntdProvider from "@/providers/antd-provider";
+import Footer from "@/components/elements/footer";
 
 const poppins = Poppins({
   variable: "--font-alumni_sans",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           <AntdRegistry>
             <Navbar />
             {children}
+            <Footer />
           </AntdRegistry>
         </AntdProvider>
       </body>

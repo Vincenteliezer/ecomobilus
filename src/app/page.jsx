@@ -5,6 +5,8 @@ import Image from "next/image";
 import ScooterImg from "/public/images/tuk-tuk-image.png";
 import PartnersSection from "@/components/elements/partners";
 import ServicesBriefSection from "@/components/elements/services-brief-section";
+import { MapPinned, PlugZap, Tractor } from "lucide-react";
+import SdgsSection from "@/components/elements/sdgs";
 
 export default function HomePage() {
   return (
@@ -18,7 +20,7 @@ export default function HomePage() {
             border: 0,
           }}
           className="h-56 w-96 bg-black bg-opacity-35"
-          hoverable
+          hoverable={true}
         >
           <p className="text-3xl text-[#4eba39]">OUR MISSION</p>
           <div className="mt-6">
@@ -66,6 +68,56 @@ export default function HomePage() {
           </CenterLayout>
         </div>
       </div>
+
+      <div className="mt-10 px-4 lg:px-0">
+        <CenterLayout className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="flex space-x-4 hover:scale-105 cursor-pointer">
+            <div className="bg-[#020747] h-20 w-20 flex items-center justify-center flex-shrink-0">
+              <PlugZap color="white" size={30} />
+            </div>
+
+            <div>
+              <p className="font-bold text-xl">Eco-friendly Power Solutions</p>
+              <p className="mt-2">
+                Portable power banks and large-capacity battery systems made
+                from recycled materials, charged using renewable energy source
+                like solar panels.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex space-x-4 hover:scale-105 cursor-pointer">
+            <div className="bg-[#4eba39] h-20 w-20 flex items-center justify-center flex-shrink-0">
+              <MapPinned color="white" size={30} />
+            </div>
+
+            <div>
+              <p className="font-bold text-xl">Empowering Remote Communities</p>
+              <p className="mt-2">
+                Delivering reliable and affordable power for lighting,
+                appliances, and mobile device charging in off-grid areas.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex space-x-4 hover:scale-105 cursor-pointer">
+            <div className="bg-[#1cd6f5] h-20 w-20 flex items-center justify-center flex-shrink-0">
+              <Tractor color="white" size={30} />
+            </div>
+
+            <div>
+              <p className="font-bold text-xl">Sustainable Transportation</p>
+              <p className="mt-2">
+                Converting convention gasoline-powered Boda-bodas(Motorcycles)
+                into electric vehicles, reducing fuel costs, emissions, and
+                noise pollution.
+              </p>
+            </div>
+          </div>
+        </CenterLayout>
+      </div>
+
+     <SdgsSection />
     </main>
   );
 }

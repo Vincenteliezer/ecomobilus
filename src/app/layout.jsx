@@ -13,6 +13,10 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  title: {
+    default: "Ecomobilus Technologies",
+    template: "%s | Ecomobilus",
+  },
   icons: {
     icon: [
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
@@ -23,7 +27,7 @@ export const metadata = {
   },
   manifest: "/site.webmanifest",
   appleWebApp: {
-    title: "MyWebSite",
+    title: "Ecomobilus Technologies",
   },
 };
 
@@ -31,13 +35,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
-        <AntdProvider poppins={poppins}>
-          <AntdRegistry>
+        <AntdRegistry>
+          <AntdProvider poppins={poppins}>
             <Navbar />
             {children}
             <Footer />
-          </AntdRegistry>
-        </AntdProvider>
+          </AntdProvider>
+        </AntdRegistry>
       </body>
     </html>
   );

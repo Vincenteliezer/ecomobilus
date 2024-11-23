@@ -4,6 +4,7 @@ import React from "react";
 import AboutImage from "/public/images/about-image.jpeg";
 import { Alert } from "antd";
 import { EyeIcon, FlagIcon } from "lucide-react";
+import TeamSection from "@/components/elements/team";
 
 export const metadata = {
   title: "About Us",
@@ -121,6 +122,8 @@ export default function AboutPage() {
           </div>
         </CenterLayout>
       </div>
+
+      <TeamSection />
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PartnersSection() {
+export default function BannerSection() {
   return (
     <section className="py-6 h-full">
       <div className="flex items-center justify-center">

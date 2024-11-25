@@ -3,10 +3,11 @@ import CenterLayout from "@/components/layouts/center-layout";
 import { Card } from "antd";
 import Image from "next/image";
 import ScooterImg from "/public/images/tuk-tuk-image.png";
-import PartnersSection from "@/components/elements/partners";
 import ServicesBriefSection from "@/components/elements/services-brief-section";
 import { MapPinned, PlugZap, Tractor } from "lucide-react";
 import SdgsSection from "@/components/elements/sdgs";
+import BannerSection from "@/components/elements/banner";
+import PartnersSlider from "@/components/elements/partners-slider";
 
 export default function HomePage() {
   return (
@@ -64,7 +65,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black opacity-40" />
         <div className="relative h-full flex items-center justify-center">
           <CenterLayout>
-            <PartnersSection />
+            <BannerSection />
           </CenterLayout>
         </div>
       </div>
@@ -117,7 +118,9 @@ export default function HomePage() {
         </CenterLayout>
       </div>
 
-     <SdgsSection />
+      <SdgsSection />
+
+      <PartnersSlider />
     </main>
   );
 }

@@ -5,6 +5,7 @@ import AboutImage from "/public/images/about-image.jpeg";
 import { Alert } from "antd";
 import { EyeIcon, FlagIcon } from "lucide-react";
 import TeamSection from "@/components/elements/team";
+import MediaCoverage from "@/components/elements/media-coverage";
 
 export const metadata = {
   title: "About Us",
@@ -51,7 +52,9 @@ export default function AboutPage() {
         </CenterLayout>
       </div>
 
-      <div className="mt-10 bg-[#020747] py-6 px-4 lg:px-0">
+      <MediaCoverage />
+
+      <div className=" bg-[#020747] py-6 px-4 lg:px-0">
         <CenterLayout className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-10">
           <div className="text-center ">
             <div className="flex items-center w-full justify-center">

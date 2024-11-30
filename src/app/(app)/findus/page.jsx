@@ -7,6 +7,8 @@ export const metadata = {
 export default function FindUsPage() {
 
   return (
-    <div>page</div>
+    <main>
+      <p>find us</p>
+    </main>
   )
 }

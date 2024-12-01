@@ -20,7 +20,7 @@ export default function HomePage() {
             backgroundColor: "#020747",
             border: 0,
           }}
-          className="h-56 w-md bg-black bg-opacity-35"
+          className="h-56 w-md lg:w-96 bg-black bg-opacity-35"
           hoverable={true}
         >
           <p className="text-3xl text-[#4eba39]">OUR MISSION</p>

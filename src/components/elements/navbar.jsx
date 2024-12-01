@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <AntDrawer title={(
         <div>
-          <p className="text-nowrap text-gray-500 overflow-ellipsis">Ecomobilus Technologies Limited</p>
+          <p className="text-nowrap text-white overflow-ellipsis">Ecomobilus Technologies LTD</p>
         </div>
       )}
         open={isDrawerOpen} onClose={closeDrawer}>

@@ -20,7 +20,7 @@ export default function HomePage() {
             backgroundColor: "#020747",
             border: 0,
           }}
-          className="h-56 w-96 bg-black bg-opacity-35"
+          className="h-56 w-md bg-black bg-opacity-35"
           hoverable={true}
         >
           <p className="text-3xl text-[#4eba39]">OUR MISSION</p>
@@ -33,7 +33,7 @@ export default function HomePage() {
           </div>
         </Card>
       </CenterLayout>
-      <div className="bg-[#020747]">
+      <div className="bg-[#020747] py-6">
         <CenterLayout className="grid grid-cols-1 lg:grid-cols-2 h-full pt-10">
           <div className="h-full flex items-end justify-start px-4 lg:px-0">
             <Image src={ScooterImg} alt="" className="w-auto object-cover" />

@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-white py-2">
+      <div className="bg-white py-2 px-4 lg:px-0">
         <CenterLayout>
           <p>EcomobilusTechnologies Limited</p>
         </CenterLayout>

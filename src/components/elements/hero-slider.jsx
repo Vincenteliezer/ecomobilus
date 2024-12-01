@@ -25,16 +25,16 @@ export default function HeroSlider() {
         <div className="h-full absolute top-0 w-full px-4 lg:px-0">
           <CenterLayout className="h-full flex items-center">
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-8xl text-white font-bold text-wrap">
+              <h1 className="text-5xl lg:text-8xl text-white font-bold text-wrap">
                 Ecomobilus
-                <span className="text-5xl font-light"> Technologies</span>
+                <span className="text-3xl font-light"> Technologies</span>
               </h1>
-              <p className="text-3xl text-white font-extralight max-w-xl w-full">
+              <p className="text-xl lg:text-3xl text-white font-extralight max-w-xl w-full">
                 Pioneering Sustainable Mobility
               </p>
 
               <div>
-                <button className="bg-[#4eba39] px-8 py-4 text-xl">
+                <button className="bg-[#4eba39] px-8 py-4 text-xl text-white">
                   More about us
                 </button>
               </div>
@@ -55,10 +55,10 @@ export default function HeroSlider() {
         <div className="h-full absolute top-0 w-full px-4 lg:px-0">
           <CenterLayout className="h-full flex items-center">
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-8xl text-white font-bold">
+              <h1 className="text-5xl lg:text-8xl text-white font-bold">
                 Innovation
               </h1>
-              <p className="text-3xl text-white font-extralight max-w-xl w-full">
+              <p className="text-xl lg:text-3xl text-white font-extralight max-w-xl w-full">
                 Continuously pushing the boundaries of technology to develop
                 cutting-edge solutions
               </p>
@@ -85,10 +85,10 @@ export default function HeroSlider() {
         <div className="h-full absolute top-0 w-full px-4 lg:px-0">
           <CenterLayout className="h-full flex items-center">
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-8xl text-white font-bold">
+              <h1 className="text-5xl lg:text-8xl text-white font-bold">
                 Sustainability
               </h1>
-              <p className="text-3xl text-white font-extralight max-w-xl w-full">
+              <p className="text-xl lg:text-3xl text-white font-extralight max-w-xl w-full">
                 Prioritizing environmental sustainability and promoting
                 renewable energy.
               </p>
@@ -115,10 +115,10 @@ export default function HeroSlider() {
         <div className="h-full absolute top-0 w-full px-4 lg:px-0">
           <CenterLayout className="h-full flex items-center">
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-8xl text-white font-bold">
+              <h1 className="text-5xl lg:text-8xl text-white font-bold">
                 Social Impact
               </h1>
-              <p className="text-3xl text-white font-extralight max-w-xl w-full">
+              <p className="text-xl lg:text-3xl text-white font-extralight max-w-xl w-full">
                 Empowering communities and contributing to a more equitable
                 future.
               </p>

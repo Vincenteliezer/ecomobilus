@@ -8,6 +8,7 @@ import { MapPinned, PlugZap, Tractor } from "lucide-react";
 import SdgsSection from "@/components/elements/sdgs";
 import BannerSection from "@/components/elements/banner";
 import PartnersSlider from "@/components/elements/partners-slider";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -47,9 +48,11 @@ export default function HomePage() {
             </h1>
 
             <div className="flex justify-center lg:justify-end w-full">
-              <button className="bg-white w-fit mt-8 px-6 py-4">
-                Read More
-              </button>
+              <Link href='/about'>
+                <button className="bg-white w-fit mt-8 px-6 py-4">
+                  Read More
+                </button>
+              </Link>
             </div>
           </div>
         </CenterLayout>

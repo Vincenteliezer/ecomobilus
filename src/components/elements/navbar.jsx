@@ -1,18 +1,119 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "/public/icons/logo-full.png";
 import CenterLayout from "../layouts/center-layout";
 import { Button, Card } from "antd";
 import Link from "next/link";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import AntDrawer from "../ui/ant-drawer";
 
 export default function Navbar() {
   const pathname = usePathname();
 
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
+  const openDrawer = () => {
+    setIsDrawerOpen(true)
+  }
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false)
+  }
+
   return (
     <>
+      <AntDrawer title={(
+        <div>
+          <p className="text-nowrap text-gray-500 overflow-ellipsis">Ecomobilus Technologies Limited</p>
+        </div>
+      )}
+        open={isDrawerOpen} onClose={closeDrawer}>
+
+        <Link href="/">
+          <Image
+            src={Logo}
+            alt="Ecomobilus logo"
+            className="h-16 w-auto"
+            placeholder="blur"
+          />
+        </Link>
+
+        <ul className="text-white space-y-6 mt-10">
+          <li>
+            <Link href="/">
+              <Button
+                style={
+                  pathname === "/"
+                    ? { color: "cyan" }
+                    : { color: "white" }
+                }
+                type="text"
+                icon={<HomeIcon size={15} />}
+              >
+                Home
+              </Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <Button
+                type="link"
+                style={
+                  pathname === "/about"
+                    ? { color: "cyan" }
+                    : { color: "white" }
+                }
+              >
+                About
+              </Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/products">
+              <Button
+                type="link"
+                style={
+                  pathname === "/products"
+                    ? { color: "cyan" }
+                    : { color: "white" }
+                }
+              >
+                Products & services
+              </Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/careers">
+              <Button
+                type="link"
+                style={
+                  pathname === "/careers"
+                    ? { color: "cyan" }
+                    : { color: "white" }
+                }
+              >
+                Careers
+              </Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/findus">
+              <Button
+                type="link"
+                style={
+                  pathname === "/findus"
+                    ? { color: "cyan" }
+                    : { color: "white" }
+                }
+              >
+                Find us
+              </Button>
+            </Link>
+          </li>
+        </ul>
+      </AntDrawer>
       <div className="bg-white py-2 px-4 lg:px-0">
         <CenterLayout>
           <p>EcomobilusTechnologies Limited</p>
@@ -34,6 +135,10 @@ export default function Navbar() {
                   placeholder="blur"
                 />
               </Link>
+
+              <div className="lg:hidden">
+                <Button type="text" icon={<Menu color="white" size={30} onClick={() => openDrawer()} />} />
+              </div>
 
               <div className="hidden lg:block">
                 <ul className="flex text-white">

@@ -27,7 +27,7 @@ export default function HeroSlider() {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-8xl text-white font-bold text-wrap">
                 Ecomobilus
-                <span className="text-3xl font-light"> Technologies</span>
+                <span className="text-3xl lg:text-4xl font-light"> Technologies</span>
               </h1>
               <p className="text-xl lg:text-3xl text-white font-extralight max-w-xl w-full">
                 Pioneering Sustainable Mobility

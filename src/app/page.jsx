@@ -9,6 +9,7 @@ import SdgsSection from "@/components/elements/sdgs";
 import BannerSection from "@/components/elements/banner";
 import PartnersSlider from "@/components/elements/partners-slider";
 import Link from "next/link";
+import MkokoSection from "@/components/elements/mkoko-section";
 
 export default function HomePage() {
   return (
@@ -59,6 +60,7 @@ export default function HomePage() {
       </div>
 
       <ServicesBriefSection />
+      <MkokoSection />
 
       <div className="h-[400px] relative">
         <div

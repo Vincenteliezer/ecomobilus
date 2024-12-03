@@ -28,10 +28,10 @@ export default function Footer() {
             />
             <div>
               <p className="text-white font-bold text-2xl">
-                Ecomobilus Technologies LTD
+                Ecomobilus Technologies Ltd
               </p>
               <p className="text-cyan-400 font-light">
-                Pioneering Sustainable Mobility
+                Ideas in Motion
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Footer() {
                 <PhoneCallIcon color="black" />
               </div>
 
-              <p className="text-white">0729 722 712</p>
+              <p className="text-white">0729722912</p> 
             </div>
 
             <div className="flex items-center space-x-4">

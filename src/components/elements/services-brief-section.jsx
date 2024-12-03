@@ -3,56 +3,71 @@ import CenterLayout from "../layouts/center-layout";
 import ImgFour from "/public/images/scooter-image.png";
 import Image from "next/image";
 import {
+  BaggageClaim,
+  Battery,
+  BatteryCharging,
   Cable,
-  CarFrontIcon,
-  CircuitBoard,
-  Divide,
-  PlugZap,
-  Zap,
+  Car,
+  CarFront,
+  Leaf,
 } from "lucide-react";
 import { Divider } from "antd";
 import Link from "next/link";
 
 export default function ServicesBriefSection() {
   return (
-    <section className="">
-      <CenterLayout className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-4 px-4 lg:px-0">
+    <section className="py-10">
+      <CenterLayout className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 lg:px-0">
         <div>
           <h2 className="text-6xl font-bold">What to Do...</h2>
           <ul className="space-y-2 mt-8 text-xl">
             <li className="flex items-center space-x-4">
               <div className="bg-[#020747] flex-shrink-0 p-2">
-                <CarFrontIcon color="white" size={40} />
+                <BaggageClaim color="white" size={40} />
               </div>
-              <p>Sale of Electric 2,3 & 4 Wheelers</p>
+              <p>Building Custom Electric Vehicles (eMkoko project)</p>
             </li>
 
             <li className="flex items-center space-x-4">
               <div className="bg-[#020747] flex-shrink-0 p-2">
-                <Zap color="white" size={40} />
+                <Battery color="white" size={40} />
               </div>
-              <p>Conversion - Gasoline to Electric Vehicle</p>
+              <p>Building Custom Lithium Battery</p>
             </li>
 
             <li className="flex items-center space-x-4">
               <div className="bg-[#020747] flex-shrink-0 p-2">
-                <PlugZap color="white" size={40} />
+                <BatteryCharging color="white" size={40} />
               </div>
-              <p>Battery Assembly | Charging | Swapping | Repair</p>
+              <p>Lithium Battery Charging | Swapping | Repair</p>
             </li>
 
             <li className="flex items-center space-x-4">
               <div className="bg-[#020747] flex-shrink-0 p-2">
                 <Cable color="white" size={40} />
               </div>
-              <p>Training on e-Mobility, Solar PV & Related Technologies</p>
+              <p>Solar PV Systems Installation for EV & Energy Storage</p>
             </li>
 
             <li className="flex items-center space-x-4">
               <div className="bg-[#020747] flex-shrink-0 p-2">
-                <CircuitBoard color="white" size={40} />
+                <CarFront color="white" size={40} />
               </div>
-              <p>Solar PV Systems Installation for EV, Grid & Energy Storage</p>
+              <p>Conversion - Gasoline to Electric Vehicles</p>
+            </li>
+
+            <li className="flex items-center space-x-4">
+              <div className="bg-[#020747] flex-shrink-0 p-2">
+                <Car color="white" size={40} />
+              </div>
+              <p>Sale of Electric Vehicles 2,3 & 4 Wheelers</p>
+            </li>
+
+            <li className="flex items-center space-x-4">
+              <div className="bg-[#020747] flex-shrink-0 p-2">
+                <Leaf color="white" size={40} />
+              </div>
+              <p>Training on e-Mobility, Solar PV & Related Technologies</p>
             </li>
           </ul>
           <Divider />

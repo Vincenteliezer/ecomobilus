@@ -30,7 +30,7 @@ export default function HeroSlider() {
                 <span className="text-3xl lg:text-4xl font-light"> Technologies</span>
               </h1>
               <p className="text-xl lg:text-3xl text-white font-extralight max-w-xl w-full">
-                Pioneering Sustainable Mobility
+                Ideas in Motion
               </p>
 
               <div>

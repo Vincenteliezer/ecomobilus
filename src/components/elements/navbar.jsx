@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <AntDrawer title={(
         <div>
-          <p className="text-nowrap text-white overflow-ellipsis">Ecomobilus Technologies LTD</p>
+          <p className="text-nowrap text-white overflow-ellipsis">Ecomobilus Technologies Ltd</p>
         </div>
       )}
         open={isDrawerOpen} onClose={closeDrawer}>
@@ -84,20 +84,7 @@ export default function Navbar() {
               </Button>
             </Link>
           </li>
-          <li>
-            <Link href="/careers">
-              <Button
-                type="link"
-                style={
-                  pathname === "/careers"
-                    ? { color: "cyan" }
-                    : { color: "white" }
-                }
-              >
-                Careers
-              </Button>
-            </Link>
-          </li>
+
           <li>
             <Link href="/findus">
               <Button
@@ -114,13 +101,14 @@ export default function Navbar() {
           </li>
         </ul>
       </AntDrawer>
-      <div className="bg-white py-2 px-4 lg:px-0">
+
+      <header role="banner" className="bg-white py-2 px-4 lg:px-0">
         <CenterLayout>
           <p>EcomobilusTechnologies Limited</p>
         </CenterLayout>
-      </div>
+      </header>
 
-      <div className="sticky top-0 z-50">
+      <nav className="sticky top-0 z-50" role="navigation">
         <Card
           style={{ backgroundColor: "#020747", border: 0, borderRadius: 0 }}
           styles={{ body: { padding: 0 } }}
@@ -185,20 +173,7 @@ export default function Navbar() {
                       </Button>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/careers">
-                      <Button
-                        type="link"
-                        style={
-                          pathname === "/careers"
-                            ? { color: "cyan" }
-                            : { color: "white" }
-                        }
-                      >
-                        Careers
-                      </Button>
-                    </Link>
-                  </li>
+
                   <li>
                     <Link href="/findus">
                       <Button
@@ -218,7 +193,7 @@ export default function Navbar() {
             </div>
           </CenterLayout>
         </Card>
-      </div>
+      </nav>
     </>
   );
 }
